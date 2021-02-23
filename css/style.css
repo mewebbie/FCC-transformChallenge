@@ -1,4 +1,3 @@
-
 body {
 	text-align:justify;	
 	animation:fade-in ease 2s;
@@ -9,6 +8,8 @@ body {
 	background:rgb(152, 204, 227);
 	color:black;
 	font-family: 'PT Sans', sans-serif;
+	display:grid;
+	grid-template-columns:60% 40%;
 }
 img {
 	width:200px;
@@ -16,7 +17,6 @@ img {
 
 .content {
 	display:inline-block;
-	width:60%;
 	margin-left:20px;
 	font-size:1.10em;
 }
@@ -37,6 +37,8 @@ h1 {
 	margin:0px 0px 20px 20px;
 	background:rgb(232, 108, 51);
 	height:1800px;
+	margin-left:80px;
+	height:98%;
 }
 
 #image-1 {
@@ -62,9 +64,8 @@ h1 {
 }
 
 .image-grid {
-	display:grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
+	display:flex;
+	flex-wrap: wrap;
 }
 
 .image-grid img {
@@ -72,6 +73,7 @@ h1 {
 	height:200px;
 	width:300px;
 	transition:all 350ms ease-in;
+	transform:translate(70px,0px);
 }
 
 .image-grid img:hover {
